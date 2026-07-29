@@ -5,8 +5,8 @@ export const site = {
   discordUserId: '1434978276752883814',
   socials: {
     discord: 'https://discord.com/users/1434978276752883814',
-    roblox: 'https://www.roblox.com/users/profile',
-    tiktok: 'https://www.tiktok.com/@velvetcakeyyy',
+    roblox: 'https://roblox.com/users/10916758006/profile',
+    tiktok: 'https://tiktok.com/@velvetcakeyyy',
     github: 'https://github.com/velvet',
   },
 };
