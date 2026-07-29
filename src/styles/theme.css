@@ -1,0 +1,22 @@
+:root {
+  --bg: #0a0a0c;
+  --text: #e8e8e8;
+  --text-secondary: #9696a0;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(255, 255, 255, 0.25);
+  --scrim: rgba(0, 0, 0, 0.3);
+  --ui-bg: rgba(255, 255, 255, 0.04);
+  --ui-bg-hover: rgba(255, 255, 255, 0.09);
+  --window-bg: rgba(14, 14, 18, 0.62);
+  --window-border: rgba(255, 255, 255, 0.16);
+  --window-shadow: 0 32px 85px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  --radius-sm: 0.625rem;
+  --radius-window: 1rem;
+  --radius-pill: 999px;
+
+  /* Dock Clearance Gap Variables (Edit these to adjust space above dock) */
+  --maximized-dock-gap: 7rem; /* Gap between bottom of maximized window and screen bottom */
+  --mobile-dock-gap: 6rem;    /* Gap between bottom of mobile window and screen bottom */
+
+  color-scheme: dark;
+}

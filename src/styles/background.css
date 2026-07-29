@@ -1,0 +1,21 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--scrim);
+  transition: background 0.25s ease;
+}
+
+.bg--sharp {
+  z-index: -2;
+}
