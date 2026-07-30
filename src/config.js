@@ -7,7 +7,7 @@ export const site = {
     discord: 'https://discord.com/users/1434978276752883814',
     roblox: 'https://roblox.com/users/10916758006/profile',
     tiktok: 'https://tiktok.com/@velvetcakeyyy',
-    github: 'https://github.com/cakeyvelvet',
+    github: 'https://github.com/VelvetCakey',
   },
 };
 
