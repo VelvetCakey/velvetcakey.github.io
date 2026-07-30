@@ -13,10 +13,8 @@
   --radius-sm: 0.625rem;
   --radius-window: 1rem;
   --radius-pill: 999px;
-
-  /* Dock Clearance Gap Variables (Edit these to adjust space above dock) */
-  --maximized-dock-gap: 7rem; /* Gap between bottom of maximized window and screen bottom */
-  --mobile-dock-gap: 6rem;    /* Gap between bottom of mobile window and screen bottom */
+  --maximized-dock-gap: 7rem;
+  --mobile-dock-gap: 6rem;
 
   color-scheme: dark;
 }
