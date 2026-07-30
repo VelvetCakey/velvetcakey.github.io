@@ -1,5 +1,5 @@
 const GREETINGS = [
-  'Hi',       // English (start)
+  'Hi',       // English
   'Hola',     // Spanish
   'Bonjour',  // French
   'Ciao',     // Italian
@@ -19,10 +19,10 @@ const GREETINGS = [
   'Ahoj',     // Czech/Slovak
 ];
 
-const TYPE_SPEED = 80;     // ms per character typed
-const DELETE_SPEED = 50;   // ms per character deleted
-const PAUSE_AFTER_TYPE = 1800; // ms to wait after fully typed
-const PAUSE_BEFORE_TYPE = 200; // ms to wait before typing next
+const TYPE_SPEED = 80;
+const DELETE_SPEED = 50;
+const PAUSE_AFTER_TYPE = 1800;
+const PAUSE_BEFORE_TYPE = 200;
 
 export function initGreeting() {
   const el = document.getElementById('greeting-text');
@@ -37,26 +37,22 @@ export function initGreeting() {
     const targetWord = GREETINGS[currentIndex];
 
     if (!isDeleting) {
-      // Typing forward
       if (currentText.length < targetWord.length) {
         currentText = targetWord.slice(0, currentText.length + 1);
         el.textContent = currentText;
         timeoutId = setTimeout(tick, TYPE_SPEED);
       } else {
-        // Fully typed — pause then start deleting
         timeoutId = setTimeout(() => {
           isDeleting = true;
           tick();
         }, PAUSE_AFTER_TYPE);
       }
     } else {
-      // Deleting backward
       if (currentText.length > 0) {
         currentText = currentText.slice(0, -1);
         el.textContent = currentText;
         timeoutId = setTimeout(tick, DELETE_SPEED);
       } else {
-        // Fully deleted — move to next greeting
         isDeleting = false;
         currentIndex = (currentIndex + 1) % GREETINGS.length;
         currentText = '';
@@ -65,12 +61,10 @@ export function initGreeting() {
     }
   };
 
-  // Start cycling after the initial greeting sits for a moment
   timeoutId = setTimeout(() => {
     isDeleting = true;
     tick();
   }, PAUSE_AFTER_TYPE);
 
-  // Clean up on page unload
   window.addEventListener('beforeunload', () => clearTimeout(timeoutId));
 }
