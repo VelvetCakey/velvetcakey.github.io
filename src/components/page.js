@@ -27,7 +27,7 @@ export function renderPage() {
             </button>
           </div>
           <span class="window__title">
-            <span class="window__title-badge">cakeyvelvet.github.io</span>
+            <span class="window__title-badge">velvetcakey.github.io</span>
           </span>
         </div>
         <div class="window__titlebar-right">
