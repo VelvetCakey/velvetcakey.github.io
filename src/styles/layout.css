@@ -1,4 +1,3 @@
-/* Page Container */
 .page {
   position: relative;
   z-index: 1;
@@ -11,7 +10,6 @@
   padding: 1rem;
 }
 
-/* Window Component */
 .window {
   position: fixed;
   top: 45%;
@@ -68,7 +66,6 @@
   pointer-events: none;
 }
 
-/* Resize Handles */
 .window__resize-handle {
   position: absolute;
   z-index: 25;
@@ -115,7 +112,6 @@
   display: none !important;
 }
 
-/* Titlebar */
 .window__titlebar {
   display: flex;
   align-items: center;
@@ -310,7 +306,6 @@
   font-size: 0.95rem;
 }
 
-/* Typewriter greeting */
 .header__name {
   white-space: normal;
   overflow: visible;
@@ -546,7 +541,6 @@
   background: #80848e;
 }
 
-/* macOS Social Dock Styles */
 .dock-wrapper {
   position: fixed;
   bottom: 1.25rem;
@@ -651,7 +645,6 @@
   transform: scale(1.25);
 }
 
-/* Keyframe Animations */
 @keyframes windowEntrance {
   0% {
     opacity: 0;
@@ -692,7 +685,6 @@
   }
 }
 
-/* Mobile & Small Screen Tweaks */
 @media (max-width: 768px) {
   .page {
     padding: 0.75rem 0.5rem 5.5rem 0.5rem;
